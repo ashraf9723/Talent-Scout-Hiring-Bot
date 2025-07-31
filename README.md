@@ -103,7 +103,7 @@ The effectiveness of this chatbot relies heavily on its **system prompt**. The p
 * **Challenge:** Handling sensitive candidate data.
     * **Solution:** The prompt explicitly forbids asking for information beyond the specified list. For a production application, this data would not be stored in `st.session_state` but would be immediately transmitted over HTTPS to a secure, GDPR-compliant backend database for storage and processing.
 
-## ✨ Optional Enhancements (Bonus)
+## ✨  Enhancement Done in this project.
 
 * **Sentiment Analysis:** Could be implemented by making a secondary, non-streaming call to the LLM after each user message, asking it to classify the sentiment (e.g., "Positive," "Neutral," "Negative") of the last user response.
 * **Multilingual Support:** The system prompt could be modified to include: "First, detect the user's language. Then, conduct the entire conversation in that language."
